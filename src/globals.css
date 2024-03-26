@@ -1,0 +1,52 @@
+:root {
+  --mustard-mud: 182, 174, 126;
+}
+
+body {
+  margin: 0;
+  color: white;
+  background: rgb(var(--mustard-mud));
+  width: 60%;
+  padding-left: 20%;
+  padding-top: 26px;
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    padding-left: 0;
+    padding-top: 0;
+  }
+}
+
+.col-1 {width: 12.5%;}
+.col-2 {width: 25%;}
+.col-3 {width: 37.5%;}
+.col-4 {width: 50%;}
+.col-5 {width: 62.5%;}
+.col-6 {width: 75%;}
+.col-7 {width: 87.5%;}
+.col-8 {width: 100%;}
+
+/* Set all columns to 15px padding, add border + float left */
+[class*="col-"] {
+  float: left;
+  padding: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.center {
+  justify-content: center;
+}

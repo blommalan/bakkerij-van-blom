@@ -15,8 +15,8 @@ const HeaderBar = () => {
             </div>
 
             <div className={styles.rightSection}>
-                <IconButton><AccountCircleIcon></AccountCircleIcon></IconButton>
-                <IconButton><ShoppingCartIcon></ShoppingCartIcon></IconButton>
+                <IconButton tooltipText="account"><AccountCircleIcon></AccountCircleIcon></IconButton>
+                <IconButton tooltipText="cart"><ShoppingCartIcon></ShoppingCartIcon></IconButton>
             </div>
       </div>
     );

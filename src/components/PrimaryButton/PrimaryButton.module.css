@@ -3,7 +3,7 @@
     border: none;
     color: white;
     cursor: pointer;
-    letter-spacing: 2px;
+    letter-spacing: var(--spacing-small);
     font-weight: 600;
     padding: 8px;
     padding-left: 12px;
@@ -11,6 +11,6 @@
     border-radius: 10%;
 
     &:hover {
-        background: rgba(255, 255, 255, 0.1);
+        background: var(--col-background-white);
     }
 }

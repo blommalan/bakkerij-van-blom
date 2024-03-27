@@ -1,0 +1,13 @@
+.footer {
+    width: 100%;
+    left: 0;
+    right: 0;
+    height: 300px;
+    background-color: var(--col-chocolate);
+
+    .footerContainer {
+        padding-top: 24px;
+        width: 60%;
+        padding-left: 20%;
+    }
+}

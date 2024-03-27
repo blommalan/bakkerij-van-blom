@@ -1,0 +1,19 @@
+.accentButton {
+    /* border: solid 1px white; */
+    border: none;
+    background: var(--col-accent-blue);
+    color: white;
+    cursor: pointer;
+    letter-spacing: var(--spacing-small);
+    font-weight: 600;
+    font-size: 18px;
+    padding: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 2px;
+    transition: background 0.3s;
+
+    &:hover {
+        background: var(--col-accent-blue-focus);
+    }
+}

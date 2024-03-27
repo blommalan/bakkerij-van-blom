@@ -1,0 +1,18 @@
+.iconButton {
+    border-radius: 50%;
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    height: 34px;
+    width: 34px;
+    padding: 8px;
+
+    &:hover {
+        background: var(--col-background-white);
+    }
+
+    span {
+        font-size: 16px;
+    }
+}

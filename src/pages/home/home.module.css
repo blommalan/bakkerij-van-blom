@@ -1,6 +1,60 @@
 .homePage {
+    margin-bottom: 80px;
+
+    .pageHeading {
+        text-align: center;
+        font-size: var(--fontsize-page-heading);
+        letter-spacing: var(--spacing-large)
+    }
+
+    .headerBar {
+        padding-bottom: var(--page-gaps);
+
+        > button {
+            margin-left: 12px;
+            margin-right: 12px;
+        }
+    }
+
+    .introSection {
+        display: flex;
+        padding-bottom: var(--page-gaps);
+        
+        p {
+            font-family: var(--font-sansserif);
+        }
+    }
+
     .familyPortait {
         width: 100%;
         height: 100%;
+    }
+
+    .favouritesSection {
+        text-align: center;
+        
+        button {
+            margin-top: 30px;
+        }
+    }
+    
+    .favouritesHeading {
+        text-align: center;
+        font-size: var(--fontsize-banner-heading);
+        letter-spacing: var(--spacing-xlarge)
+    }
+
+    .cardContainer {
+        display: flex; 
+        justify-content: space-between;
+        height: 340px;
+    }
+
+    .favouritesCard {
+        width: 30%;
+
+        img {
+            height: 300px;
+        }
     }
 }

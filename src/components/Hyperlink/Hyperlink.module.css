@@ -1,0 +1,17 @@
+.hyperlink {
+    color: white;
+    cursor: pointer;
+    font-weight: 600px;
+    text-decoration: none;
+    text-align: center;
+    font-size: var(--fontsize-subtext);
+    letter-spacing: var(--spacing-medium);
+    padding: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-family: var(--font-sansserif);
+    
+    &:hover {
+        text-decoration: underline;
+    }
+}

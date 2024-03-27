@@ -5,6 +5,7 @@ import LinkCard from "@/src/components/LinkCard/LinkCard";
 import AccentButton from "@/src/components/AccentButton/AccentButton";
 import ShoppingCartIcon from "@/src/components/Icons/ShoppingCartIcon";
 import IconButton from "@/src/components/IconButton/IconButton";
+import HeaderBar from "@/src/components/HeaderBar/HeaderBar";
 
 const shopBannerLinks = [
   {
@@ -27,15 +28,7 @@ const shopBannerLinks = [
 const Home = () => {
   return (
     <div className={styles.homePage}>
-      <div className={styles.headerBar}>
-
-        <PrimaryButton title="home"></PrimaryButton>
-        <PrimaryButton title="shop"></PrimaryButton>
-        <PrimaryButton title="events"></PrimaryButton>
-        <PrimaryButton title="how it works"></PrimaryButton>
-
-        <IconButton><ShoppingCartIcon></ShoppingCartIcon></IconButton>
-      </div>
+      <HeaderBar></HeaderBar>
 
       <div>
         <h1 className={styles.pageHeading}>

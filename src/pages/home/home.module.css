@@ -7,15 +7,6 @@
         letter-spacing: var(--spacing-large)
     }
 
-    .headerBar {
-        padding-bottom: var(--page-gaps);
-
-        > button {
-            margin-left: 12px;
-            margin-right: 12px;
-        }
-    }
-
     .introSection {
         display: flex;
         padding-bottom: var(--page-gaps);

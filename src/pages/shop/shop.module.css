@@ -1,0 +1,30 @@
+.shopPage {
+    .introSection {
+        width: 100%;
+        text-align: center;
+        margin-top: var(--page-gaps);
+        margin-bottom: var(--page-gaps);
+    }
+    
+    .cardContainer {
+        display: flow-root;
+        /* justify-content: space-between; */
+    }
+
+    .shopCard {
+        width: 33%;
+        float: left;
+        text-align: center;
+        margin-bottom: 40px;
+
+        > div {
+            height: 340px;
+            margin-left: 16px;
+            margin-right: 16px;
+        }
+    
+        img {
+            height: 300px;
+        }
+    }
+}

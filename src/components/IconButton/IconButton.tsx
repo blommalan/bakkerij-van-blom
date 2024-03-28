@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 import styles from './IconButton.module.css'
-import { Tooltip } from "@nextui-org/react";
+import Tooltip from '../Tooltip/Tooltip';
 
 interface IconButtonProps {
     tooltipText?: string;

@@ -1,0 +1,8 @@
+.tooltip {
+    background: rgba(98, 107, 91, 0.61);
+    color: white;
+    padding-left: 16px;
+    padding-right: 16px;
+    letter-spacing: var(--spacing-xsmall);
+    border-radius: 6px;
+}

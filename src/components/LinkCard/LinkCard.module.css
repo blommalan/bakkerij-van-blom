@@ -35,5 +35,6 @@
         padding-right: 16px;
         font-family: var(--font-sansserif);
         transition: color 0.4s;
+        font-weight: 500;
     }
 }

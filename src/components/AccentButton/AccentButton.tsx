@@ -2,13 +2,18 @@ import { ReactNode } from 'react';
 import styles from './AccentButton.module.css';
 
 interface AccentButtonProps {
-  color: 'clear' | 'brown';
+  color: 'blue' | 'brown';
   children: ReactNode;
 }
 
-const AccentButton = ({ children, color = 'clear' }: AccentButtonProps) => {
+const AccentButton = ({ children, color = 'blue' }: AccentButtonProps) => {
   return (
-    <button className='accentButton' type='button'>
+    <button
+      className={`${styles.accentButton} ${
+        color === 'blue' ? '-blue' : '-brown'
+      }`}
+      type='button'
+    >
       {children}
     </button>
   );

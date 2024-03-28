@@ -26,6 +26,8 @@
 
     .favouritesSection {
         text-align: center;
+        padding-top: var(--page-gaps);
+        padding-bottom: var(--page-gaps);
         
         button {
             margin-top: 30px;
@@ -52,5 +54,13 @@
         img {
             height: 300px;
         }
+    }
+
+    .querySection {
+        padding-top: var(--page-gaps);
+        padding-bottom: var(--page-gaps);
+
+    }
+    .queryFormContainer {
     }
 }

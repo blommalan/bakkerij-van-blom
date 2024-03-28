@@ -1,11 +1,17 @@
+import { ReactNode } from 'react';
 import styles from './AccentButton.module.css';
 
-const AccentButton = ({ title = '' }) => {
-    return (
-        <button className={styles.accentButton} type="button">
-            {title}
-        </button>
-    );
+interface AccentButtonProps {
+  color: 'clear' | 'brown';
+  children: ReactNode;
 }
+
+const AccentButton = ({ children, color = 'clear' }: AccentButtonProps) => {
+  return (
+    <button className='accentButton' type='button'>
+      {children}
+    </button>
+  );
+};
 
 export default AccentButton;

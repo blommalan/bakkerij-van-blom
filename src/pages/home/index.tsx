@@ -1,27 +1,28 @@
-import Image from "next/image";
-import PrimaryButton from "@/src/components/PrimaryButton/PrimaryButton";
-import styles from "./home.module.css";
-import LinkCard from "@/src/components/LinkCard/LinkCard";
-import AccentButton from "@/src/components/AccentButton/AccentButton";
-import ShoppingCartIcon from "@/src/components/Icons/ShoppingCartIcon";
-import IconButton from "@/src/components/IconButton/IconButton";
-import HeaderBar from "@/src/components/HeaderBar/HeaderBar";
+import Image from 'next/image';
+import PrimaryButton from '@/src/components/PrimaryButton/PrimaryButton';
+import styles from './home.module.css';
+import LinkCard from '@/src/components/LinkCard/LinkCard';
+import AccentButton from '@/src/components/AccentButton/AccentButton';
+import ShoppingCartIcon from '@/src/components/Icons/ShoppingCartIcon';
+import IconButton from '@/src/components/IconButton/IconButton';
+import HeaderBar from '@/src/components/HeaderBar/HeaderBar';
+import QueryForm from '@/src/components/QueryForm/QueryForm';
 
 const shopBannerLinks = [
   {
-    link: "/shop/blueberry",
-    title: "blueberry",
-    image: "/cake1.jpg",
+    link: '/shop/blueberry',
+    title: 'blueberry',
+    image: '/cake1.jpg',
   },
   {
-    link: "/shop/chocolate",
-    title: "chocolate",
-    image: "/chocolate_cake.jpg",
+    link: '/shop/chocolate',
+    title: 'chocolate',
+    image: '/chocolate_cake.jpg',
   },
   {
-    link: "/shop/birthday-cake",
-    title: "birthday",
-    image: "/pink_cake.jpg",
+    link: '/shop/birthday-cake',
+    title: 'birthday',
+    image: '/pink_cake.jpg',
   },
 ];
 
@@ -30,19 +31,19 @@ const Home = () => {
     <div className={styles.homePage}>
       <HeaderBar></HeaderBar>
 
-      <div className="page-container">
+      <div className='page-container'>
         <div>
           <h1 className={styles.pageHeading}>bakkerij van blom</h1>
 
           <div className={styles.introSection}>
-            <div className="col-4 center flex">
+            <div className='col-4 center flex'>
               <img
                 className={styles.familyPortait}
-                src="/familyPhoto.png"
-                alt="Family Photo"
+                src='/familyPhoto.png'
+                alt='Family Photo'
               />
             </div>
-            <p className="col-4 font-reading">
+            <p className='col-4 font-reading'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -60,7 +61,7 @@ const Home = () => {
             {shopBannerLinks.map((bannerLink, i) => {
               return (
                 <div
-                  key={"favouritesCard_" + i}
+                  key={'favouritesCard_' + i}
                   className={styles.favouritesCard}
                 >
                   <LinkCard
@@ -74,7 +75,14 @@ const Home = () => {
             })}
           </div>
 
-          <AccentButton title="shop favourites"></AccentButton>
+          <AccentButton>shop favourites</AccentButton>
+        </div>
+
+        <div className={styles.querySection}>
+          <h3 className={styles.favouritesHeading}>need something else?</h3>
+          <div className={styles.queryFormContainer}>
+            <QueryForm></QueryForm>
+          </div>
         </div>
       </div>
     </div>

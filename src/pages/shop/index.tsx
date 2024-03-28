@@ -1,6 +1,5 @@
 import styles from './shop.module.css';
 import LinkCard from '@/src/components/LinkCard/LinkCard';
-import AccentButton from '@/src/components/AccentButton/AccentButton';
 import HeaderBar from '@/src/components/HeaderBar/HeaderBar';
 import TitleBanner from '@/src/components/TitleBanner/TitleBanner';
 

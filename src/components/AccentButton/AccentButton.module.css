@@ -1,8 +1,6 @@
 .accentButton {
     /* border: solid 1px white; */
     border: none;
-    background: var(--col-accent-blue);
-    color: white;
     cursor: pointer;
     letter-spacing: var(--spacing-small);
     font-weight: 600;
@@ -15,5 +13,15 @@
 
     &:hover {
         background: var(--col-accent-blue-focus);
+    }
+
+    &.-blue {
+        background: var(--col-accent-blue);
+        color: white;
+    }
+    &.-brown {
+        background: var(--col-accent-blue);
+        color: white;
+
     }
 }
